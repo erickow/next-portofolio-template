@@ -5,10 +5,14 @@ import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
-
+  const LIST_MENU = [
+    { title: "Home", route: "/" },
+    { title: "Portofolio", route: "/portofolio" },
+    { title: "Contact", route: "/contact" }
+  ]
   return (
-    <header className="bg-green-600">
-      <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
+    <header className="bg-black fixed w-full z-10" style={{ borderBottom: ".5px solid white" }}>
+      <div className="flex flex-wrap items-center justify-between md:justify-center lg:container px-2 py-2 mx-auto md:flex-no-wrap md:px-2">
         <div className="flex items-center">
           <Image
             src="/tailwind-logo.svg"
@@ -20,7 +24,7 @@ export default function Header() {
 
           <Link href="/">
             <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Next.js Starter Tailwind
+              Videography
             </a>
           </Link>
         </div>
@@ -38,22 +42,25 @@ export default function Header() {
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
-
+      </div>
+      <div className={cn(
+        "md:flex flex-col md:flex-row items-center md:justify-center text-sm w-full md:w-auto",
+        mobileMenuIsOpen ? `block` : `hidden`
+      )}>
         <ul
           className={cn(
             "md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
             mobileMenuIsOpen ? `block` : `hidden`
           )}
         >
-          {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/about" },
-          ].map(({ route, title }) => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={title}>
-              <Link href={route}>
+          {LIST_MENU.map(({ route, title }) => (
+            <Link href={route} key={title}>
+              <li className="md:mt-0 hover:bg-gray-700 py-3 px-8 cursor-pointer"
+                key={title}
+                onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}>
                 <a className="block text-white">{title}</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
