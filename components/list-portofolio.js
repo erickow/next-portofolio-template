@@ -44,12 +44,12 @@ export default function ListPortofolio({ item }) {
       </div>
       <div className={cn(
         "",
-        item.description ? `flex flex-wrap` : `grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4`
+        item.description ? `flex flex-wrap w-full` : `grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4`
       )}>
 
         {
           item.desc_position === 'left' &&
-          <div className="w-full md:w-2/4 flex justify-center items-center">
+          <div className="w-full md:w-2/4 flex justify-center items-center px-2 py-2">
             {item.description}
           </div>
         }
