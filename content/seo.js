@@ -1,8 +1,8 @@
 const SEO = {
     title: 'Intan Kurniawan Videographer',
-    description: 'Intan Kurniawan videographer photograper jombang contact',
+    description: 'Videographer photographer jombang kontak.',
     url: 'https://wawan.stg.rizkima.com',
-    site_name: 'Intan Kurniawan - Videographer Photography'
+    site_name: 'Intan Kurniawan - Videographer Photography Jombang'
 }
 
 export default SEO

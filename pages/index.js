@@ -7,11 +7,9 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <meta name="description" content={SEO_DATA.description}></meta>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
         <meta property="og:image" content={SEO_DATA.url+"/wawan-videograpy-brand.png"} key="ogimage" />
         <meta property="og:title" content={'Home'} key="ogtitle" />
-        <meta property="og:description" content={SEO_DATA.description} key="ogdesc" />
         <title>{SEO_DATA.title + ' - Home'}</title>
       </Head>
       <div className="grid md:grid-cols-2 gap-6 grid-cols-1 mt-16 md:mt-24">

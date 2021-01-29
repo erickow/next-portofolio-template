@@ -1,7 +1,7 @@
 {
   "name": "next-starter-tailwind",
   "version": "2.0.0",
-  "description": "Next.js starter styled with Tailwind CSS",
+  "description": "Intan Kurniawan videographer photograper jombang kontak",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/taylorbryant/next-starter-tailwind/issues"
   },
-  "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
   "dependencies": {
     "next": "10.0.4",
     "react": "17.0.1",
