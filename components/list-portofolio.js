@@ -8,13 +8,13 @@ function PortofolioItem({ item, open }) {
   return (
     <div
       onClick={() => open(item)}
-      className="border-2 border-gray-700 relative z-2">
+      className="border-2 border-gray-700 relative z-2 cursor-pointer" title="klik untuk membuka">
 
       <Image
         alt="image"
         src={item.thumbnail}
-        width={476}
-        height={297.17}
+        width={960}
+        height={540}
       />
 
       <div className="absolute top-0 right-0 bg-gray-700 px-1 py-1 z-2 text-sm">
@@ -39,9 +39,12 @@ export default function ListPortofolio({ item }) {
 
   return (
     <div className="flex flex-wrap justify-center">
-      <div className="title w-full bg-gray-700 px-4 py-2 mb-5">
-        {item.title}
-      </div>
+      {
+        item && item.title &&
+        <div className="title w-full bg-gray-700 px-4 py-2 mb-5">
+          {item.title}
+        </div>
+      }
       <div className={cn(
         "",
         item.description ? `flex flex-wrap w-full` : `grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4`

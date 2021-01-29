@@ -13,20 +13,14 @@ export default function Header() {
   return (
     <header className="bg-black fixed w-full z-10" style={{ borderBottom: ".5px solid white" }}>
       <div className="flex flex-wrap items-center justify-between md:justify-center lg:container px-2 py-2 mx-auto md:flex-no-wrap md:px-2">
-        <div className="flex items-center">
+        <div className="flex items-center px-2">
           <Image
-            src="/tailwind-logo.svg"
-            width={40}
-            height={40}
+            src="/wawan-videograpy-brand.png"
+            width={200}
+            height={50}
             priority
-            alt="Tailwind CSS logo"
+            alt="Intan Kurniawan Icon"
           />
-
-          <Link href="/">
-            <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Videography
-            </a>
-          </Link>
         </div>
 
         <button
@@ -55,7 +49,7 @@ export default function Header() {
         >
           {LIST_MENU.map(({ route, title }) => (
             <Link href={route} key={title}>
-              <li className="md:mt-0 hover:bg-gray-700 py-3 px-8 cursor-pointer"
+              <li className="md:mt-0 hover:bg-gray-700 py-2 px-8 cursor-pointer"
                 key={title}
                 onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}>
                 <a className="block text-white">{title}</a>
