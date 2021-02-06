@@ -1,9 +1,20 @@
-import Head from 'next/head'
+import { useEffect } from 'react';
+import Head from 'next/head';
 import Header from "./header";
 import Footer from "./footer";
-import SEO_DATA from '../content/seo'
+import SEO_DATA from '../content/seo';
+import { initGA, logPageView } from '../util/ga';
 
 export default function Layout(props) {
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  });
+
   return (
     <>
       <Head>
