@@ -8,7 +8,7 @@ export default function PortofolioPage() {
     <>
       <Head>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
-        <meta property="og:image" content={SEO_DATA.url+"/wawan-videograpy-brand.png"} key="ogimage" />
+        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
         <meta property="og:title" content={'Portofolio'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - Portofolio'}</title>
       </Head>

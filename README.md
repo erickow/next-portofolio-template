@@ -1,54 +1,102 @@
-# Next.js Starter Tailwind
+## Next Js Portofolio with simple static json data
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+## Feature
+ - [Next Js Tailwind template](https://github.com/taylorbryant/next-starter-tailwind)
+ - Google Analytic Setting
+ - Static sitemap Generator
+ - Customize data responsive Layout
+ - SEO meta social sharing 
+ 
+ ## How to Run
+ ```
+ - yarn install
+ - yarn dev
+ ```
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+  ## How to Start
+ ```
+ - yarn start
+ ```
 
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+ ## How to Build
+ ```
+ - yarn build
+ ```
 
-![alt text](https://github.com/taylorbryant/next-starter-tailwind/blob/master/public/screenshot.png "Screenshot of Tailwind Next.js Starter homepage")
+## Important Notes
+for static images, icon, thumbnail see the public root folder in the project
 
- <div align="center">
- <p><strong>A <a href="https://nextjs.org" target="_blank">Next.js</a> starter styled using <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>.</strong></p>
- <p>Uses Tailwind CSS' <a href="https://tailwindcss.com/docs/controlling-file-size" target="_blank">built-in purge option</a> to remove unused CSS.</p>
- <p>Illustrations by <a href="https://undraw.co/" target="_blank">unDraw</a>.</p>
- <p>View demo <a href="https://next-starter-tailwind.taylorbryant.dev" target="_blank">here</a>.</p>
-</div>
+## Sample Image Object
+```
+image: {
+  ratio: {
+      width: '960',
+      height: '540'
+  },
+  url: '/critter.svg' -> check public folder
+}
+```
 
-## Deploy
+ ## Homepage Page
+   ```
+ - open folder content
+ - open file homepage
+ ```
+| Varialble      | Mandatory | Value | 
+| ----------- |:----:| ----------- |
+| title      |yes| String       |
+| description   |yes| Array, new index = new paragraph        |
+| image   |no| Image Object        |
 
-### Vercel
+ ## Portofolio Page
+  ```
+ - open folder content
+ - open file portofolio
+ ```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Ftaylorbryant%2Fnext-starter-tailwind%2Ftree%2Fmaster)
+| Varialble      | Mandatory | Value | 
+| ----------- |:----:| ----------- |
+| title      |No| String       |
+| description   |yes| Array String, new index = new paragraph        |
+| data   |yes| Array Object (type: image, and video)        |
+| desc_position   |no| Image Object        |
 
-## License
+ ## Contact Page
+   ```
+ - open folder content
+ - open file homepage
+ ```
 
-[MIT](https://github.com/taylorbryant/next-starter-tailwind/blob/master/LICENSE.md)
+| Varialble      | Mandatory | Value | 
+| ----------- |:----:| ----------- |
+| title      |yes| String       |
+| image   |no| Image Object        |
+| list   |yes| Array Object, new index = new paragraph        |
 
-## How you can help
+ ## Seo meta social sharing
+  ```
+ - open folder content
+ - open file portofolio
+ ```
 
-Enjoying this starter and want to help? You can:
+| Varialble      | Mandatory | Value | 
+| ----------- |:----:| ----------- |
+| title      |yes| String       |
+| description   |yes| String        |
+| url   |yes| String, (website domain)        |
+| site_name   |yes| String       |
+| link_image   |yes| String, (website domain image that will show when shared)        |
 
-- [Create an issue](https://github.com/taylorbryant/next-starter-tailwind/issues/new) with some constructive criticism
-- [Submit a pull request](https://github.com/taylorbryant/next-starter-tailwind/compare) with some improvements to the project
+ ## How to Setting Google Analytic
+ ```
+ - open folder content
+ - open file constant
+ - change data id with your Google Analytics ID
+ ```
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Mozart409"><img src="https://avatars2.githubusercontent.com/u/38767929?v=4" width="100px;" alt=""/><br /><sub><b>Amadeus</b></sub></a><br /><a href="https://github.com/taylorbryant/next-starter-tailwind/commits?author=Mozart409" title="Code">💻</a> <a href="#ideas-Mozart409" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://www.synaptech.fr"><img src="https://avatars3.githubusercontent.com/u/10560326?v=4" width="100px;" alt=""/><br /><sub><b>David Eugene</b></sub></a><br /><a href="https://github.com/taylorbryant/next-starter-tailwind/commits?author=egdavid" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+  ## How to Setting Sitemap
+ ```
+ - open folder content
+ - open file constant
+ - change data website_url with your domain url
+ ```

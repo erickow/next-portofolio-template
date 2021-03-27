@@ -1,5 +1,5 @@
 const HOMEPAGE_DATA = {
-    title: 'MEET INTAN KURNIAWAN',
+    title: 'MEET [YOUR NAME]',
     description: [
         `I'm a wedding filmmaker based out of Salt Lake City, and I love my job. About 3 years ago I was asked to film my first wedding, and I fell in love with it right away. I loved capturing the emotion, the details, and the love portrayed the entire day of each special couple.`,
         `My career has taken me all over the world, capturing love in every form. I consider my career to be one of the most rewarding careers; giving me the opportunity to film Love as it happens in real time.`,

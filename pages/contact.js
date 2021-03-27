@@ -7,7 +7,7 @@ export default function ContactPage() {
     <>
       <Head>
         <meta property="og:url" content={SEO_DATA.url} key="ogurl" />
-        <meta property="og:image" content={SEO_DATA.url+"/wawan-videograpy-brand.png"} key="ogimage" />
+        <meta property="og:image" content={SEO_DATA.link_image} key="ogimage" />
         <meta property="og:title" content={'Contact'} key="ogtitle" />
         <title>{SEO_DATA.title + ' - Contact'}</title>
       </Head>

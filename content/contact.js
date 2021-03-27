@@ -8,12 +8,11 @@ const CONTACT_DATA = {
         url: '/critter.svg'
     },
     list: [
-        { icon: '/icons/tailwind-logo.svg', description: 'Whatsapp : 08512345678909'},
-        { icon: '/icons/tailwind-logo.svg', description: 'Telegram : intan Kur', link: 'https://telegram.com'},
-        { icon: '/icons/tailwind-logo.svg', description: 'Line : @wawanians'},
-        { icon: '/icons/tailwind-logo.svg', description: 'instagram : @wanwan', link: 'https://instagram.com'},
-        { description: 'Jangan lupa kontak kami ya dengan menekan contact yang di inginkan.'},
-        { description: 'Sankyuu :D'}
+        { icon: '/icons/tailwind-logo.svg', description: 'Whatsapp : whatsapp number'},
+        { icon: '/icons/tailwind-logo.svg', description: 'Telegram : your name', link: 'https://telegram.com'},
+        { icon: '/icons/tailwind-logo.svg', description: 'Line : @line_account'},
+        { icon: '/icons/tailwind-logo.svg', description: 'instagram : @ig_account', link: 'https://instagram.com'},
+        { description: 'description'}
     ]
 }
 

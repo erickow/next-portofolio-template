@@ -15,11 +15,11 @@ export default function Header() {
       <div className="flex flex-wrap items-center justify-between md:justify-center lg:container px-2 py-2 mx-auto md:flex-no-wrap md:px-2">
         <div className="flex items-center px-2">
           <Image
-            src="/wawan-videograpy-brand.png"
+            src="/tailwind-logo.svg"
             width={200}
             height={50}
             priority
-            alt="Intan Kurniawan Icon"
+            alt="Brand Icon"
           />
         </div>
 

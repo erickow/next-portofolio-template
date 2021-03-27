@@ -1,29 +1,29 @@
 const portofolio = [
     {
-        title: 'Outbound Ke Mana Lagi nih',
-        description: 'Bersenang senang outbound dong ini',
+        title: 'Portofolio with title and description',
+        description: 'lorem ipsum dolor sit ammet',
         desc_position: 'left',
         data: [
             { name: 'name', type: 'image', thumbnail: '/thumbnails/critter.svg', url: '/images/critter.svg'}
         ]
     },
     {
-        description: 'Bersenang senang outbound dong ini',
+        description: 'Portofolio with description right',
         desc_position: 'right',
         data: [
             { name: 'name', type: 'image', thumbnail: '/thumbnails/critter.svg', url: '/images/critter.svg'}
         ]
     },
     {
-        title: 'Outbound Ke Mana Lagi nih',
-        description: 'Bersenang senang outbound dong ini',
+        title: 'Portofolio with description left',
+        description: 'description text portofolio 3',
         desc_position: 'left',
         data: [
             { name: 'name', type: 'image', thumbnail: '/thumbnails/critter.svg', url: '/images/critter.svg'}
         ]
     },
     {
-        title: 'Outbound Ke mana 1',
+        title: 'Portofolio Images and video',
         data: [
             { name: 'name', type: 'video', thumbnail: '/thumbnails/critter.svg', url: 'https://www.youtube.com/embed/j1hft9Wjq9U'},
             { name: 'name', type: 'image', thumbnail: '/thumbnails/critter.svg', url: '/images/critter.svg'},
@@ -35,9 +35,8 @@ const portofolio = [
         ]
     },
     {
-        key: 'outbound-2',
-        title: 'Outbound Ke Mana Lagi nih',
-        description: 'Bersenang senang outbound dong ini',
+        title: 'Portolio with with 2 data',
+        description: 'Example portofolio',
         desc_position: 'right',
         data: [
             { name: 'name', type: 'image', thumbnail: '/thumbnails/critter.svg', url: '/images/critter.svg'},
