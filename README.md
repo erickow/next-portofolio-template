@@ -63,7 +63,7 @@ image: {
 | title      |No| String       |
 | description   |yes| Array String, new index = new paragraph        |
 | data   |yes| Array Object (type: image, and video)        |
-| desc_position   |no| Image Object        |
+| desc_position   |no| String, left or right        |
 
  ## Contact Page
    ```
