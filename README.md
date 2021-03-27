@@ -1,6 +1,6 @@
 ## Next Js Portofolio with simple static json data
 
-![next portofolio template image](https://github.com/erickow/next-portofolio-template/tree/master/public/next-portofolio-starter.png "next portofolio template image")
+![next portofolio template image](https://raw.githubusercontent.com/erickow/next-portofolio-template/master/public/next-portofolio-starter.png "next portofolio template image")
 
 project demo visit this [vercel demo link](https://next-portofolio-template.vercel.app/)
 
